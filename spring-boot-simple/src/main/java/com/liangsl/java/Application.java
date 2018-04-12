@@ -1,4 +1,4 @@
-package com.liangsl.learn;
+package com.liangsl.java;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
