@@ -22,6 +22,7 @@ public class AppTest
 {
     @Autowired
     private MockMvc mockMvc;
+
     @Test
     public void test() throws Exception {
         MockHttpServletResponse mockHttpServletResponse= mockMvc.perform(MockMvcRequestBuilders.get("/greetingList").accept(MediaType.APPLICATION_JSON_UTF8))

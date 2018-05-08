@@ -1,4 +1,4 @@
-package com.liangsl.java;
+package com.liangsl.java.common;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
