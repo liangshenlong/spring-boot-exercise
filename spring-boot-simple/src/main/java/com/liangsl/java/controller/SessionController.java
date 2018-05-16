@@ -23,6 +23,7 @@ public class SessionController {
         session.setAttribute("uuid",uuid);
         Map<String,Object> ret = new HashMap<>();
         ret.put("uuid",uuid);
+        ret.put("random",UUID.randomUUID());
         ret.put("sessionId",session.getId());
         return ret;
     }
