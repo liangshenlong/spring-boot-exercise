@@ -19,6 +19,15 @@
     </parent>
     <dependencies>
         <dependency>
+            <groupId>com.liangsl.java</groupId>
+            <artifactId>spring-boot-service</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>com.liangsl.java</groupId>
+            <artifactId>spring-boot-dao</artifactId>
+        </dependency>
+
+        <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
@@ -38,6 +47,10 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 </project>
