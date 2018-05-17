@@ -4,27 +4,20 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.liangsl.java</groupId>
     <artifactId>spring-boot-simple</artifactId>
+    <version>0.0.1.SNAPSHOT</version>
     <name>spring-boot-simple</name>
     <url>http://www.example.com</url>
-    <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <maven.compiler.source>1.9</maven.compiler.source>
-        <maven.compiler.target>1.9</maven.compiler.target>
-    </properties>
 
     <parent>
         <groupId>com.liangsl.java</groupId>
         <artifactId>spring-boot-parent</artifactId>
         <version>0.0.1.RELEASE</version>
     </parent>
+
     <dependencies>
         <dependency>
             <groupId>com.liangsl.java</groupId>
             <artifactId>spring-boot-service</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>com.liangsl.java</groupId>
-            <artifactId>spring-boot-dao</artifactId>
         </dependency>
 
         <dependency>
