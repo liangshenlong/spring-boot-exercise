@@ -1,12 +1,10 @@
 package com.liangsl.java.entity;
 
 import org.apache.commons.lang3.time.DateFormatUtils;
-import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -36,7 +34,6 @@ public class User {
         this.name = name;
     }
 
-    @DateTimeFormat(pattern = "yyyy-MM-dd HH24:mi:ss")
     public Date getCreateTime() {
         return createTime;
     }
@@ -46,6 +43,6 @@ public class User {
     }
 
     public String getCreateTimeStr(){
-        return DateFormatUtils.format(getCreateTime(),"yyyy-MM-dd");
+        return DateFormatUtils.format(getCreateTime(),"yyyy-MM-dd HH:mm:ss");
     }
 }
