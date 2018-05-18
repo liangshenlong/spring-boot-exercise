@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.liangsl.java</groupId>
-    <artifactId>spring-boot-service</artifactId>
+    <artifactId>spring-boot-repository</artifactId>
     <version>0.0.1.RELEASE</version>
 
     <parent>
@@ -17,8 +17,13 @@
     <dependencies>
         <dependency>
             <groupId>com.liangsl.java</groupId>
-            <artifactId>spring-boot-repository</artifactId>
+            <artifactId>spring-boot-entity</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
+
 
 </project>

@@ -18,8 +18,9 @@
     <modules>
         <module>../spring-boot-simple</module>
         <module>../spring-boot-service</module>
-        <module>../spring-boot-dao</module>
+        <module>../spring-boot-repository</module>
         <module>../spring-boot-batch</module>
+        <module>../spring-boot-entity</module>
     </modules>
 
     <properties>
@@ -37,7 +38,12 @@
             </dependency>
             <dependency>
                 <groupId>com.liangsl.java</groupId>
-                <artifactId>spring-boot-dao</artifactId>
+                <artifactId>spring-boot-repository</artifactId>
+                <version>0.0.1.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.liangsl.java</groupId>
+                <artifactId>spring-boot-entity</artifactId>
                 <version>0.0.1.RELEASE</version>
             </dependency>
         </dependencies>
