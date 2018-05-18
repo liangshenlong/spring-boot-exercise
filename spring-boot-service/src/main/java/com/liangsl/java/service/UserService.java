@@ -3,6 +3,11 @@ package com.liangsl.java.service;
 import com.liangsl.java.entity.User;
 import com.liangsl.java.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Example;
+import org.springframework.data.domain.ExampleMatcher;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
@@ -19,6 +24,21 @@ public class UserService {
 
     public List<User> findAll(){
         return userRepository.findAll();
+    }
+
+    public List<User> findList(User user){
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withMatcher("name",match -> match.contains());
+        Example<User> example = Example.of(user,matcher);
+        return userRepository.findAll(example);
+    }
+
+    public Page<User> findList(User user, Pageable pageable){
+        ExampleMatcher matcher = ExampleMatcher.matching()
+                .withMatcher("name",match -> match.contains());
+        Example<User> example = Example.of(user,matcher);
+        pageable.getSort().and(Sort.by(Sort.Order.desc("createTime")));
+        return userRepository.findAll(example,pageable);
     }
 
     public User save(User user){
