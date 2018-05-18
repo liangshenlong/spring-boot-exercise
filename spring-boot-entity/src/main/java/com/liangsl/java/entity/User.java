@@ -11,7 +11,6 @@ import java.util.Date;
 @Entity
 public class User {
     @Id
-    @Column(name = "id")
     private String id;
     private String name;
     @Column(name = "create_time")

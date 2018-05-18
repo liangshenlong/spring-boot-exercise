@@ -26,8 +26,6 @@ public class UserController {
 
     @RequestMapping("save")
     public User save(User user){
-        user.setId(UUID.randomUUID().toString());
-        user.setCreateTime(new Date());
         return userService.save(user);
     }
 }
