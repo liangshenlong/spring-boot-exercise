@@ -6,12 +6,13 @@
     <artifactId>spring-boot-simple</artifactId>
     <version>0.0.1.SNAPSHOT</version>
     <name>spring-boot-simple</name>
-    <url>http://www.example.com</url>
+    <packaging>jar</packaging>
 
     <parent>
         <groupId>com.liangsl.java</groupId>
         <artifactId>spring-boot-parent</artifactId>
         <version>0.0.1.RELEASE</version>
+        <relativePath>../spring-boot-parent/pom.xml</relativePath>
     </parent>
 
     <dependencies>
@@ -42,4 +43,13 @@
             <scope>test</scope>
         </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 </project>

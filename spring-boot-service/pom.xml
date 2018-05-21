@@ -6,6 +6,7 @@
     <groupId>com.liangsl.java</groupId>
     <artifactId>spring-boot-service</artifactId>
     <version>0.0.1.RELEASE</version>
+    <packaging>jar</packaging>
 
     <parent>
         <artifactId>spring-boot-parent</artifactId>
