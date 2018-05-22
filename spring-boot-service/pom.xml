@@ -20,6 +20,10 @@
             <groupId>com.liangsl.java</groupId>
             <artifactId>spring-boot-repository</artifactId>
         </dependency>
+        <dependency>
+            <groupId>com.liangsl.java</groupId>
+            <artifactId>spring-boot-repo-mybatis</artifactId>
+        </dependency>
     </dependencies>
 
 </project>

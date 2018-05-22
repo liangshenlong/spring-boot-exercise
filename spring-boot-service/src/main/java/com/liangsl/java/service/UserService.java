@@ -1,6 +1,7 @@
 package com.liangsl.java.service;
 
 import com.liangsl.java.entity.User;
+import com.liangsl.java.repository.UserMapper;
 import com.liangsl.java.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Example;
@@ -21,9 +22,11 @@ import java.util.UUID;
 public class UserService {
     @Autowired
     private UserRepository userRepository;
+    @Autowired
+    private UserMapper userMapper;
 
     public List<User> findAll(){
-        return userRepository.findAll();
+        return userMapper.findAll();
     }
 
     public List<User> findList(User user){
