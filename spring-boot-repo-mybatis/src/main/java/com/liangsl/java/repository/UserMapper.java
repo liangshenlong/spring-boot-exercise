@@ -13,7 +13,7 @@ import java.util.List;
  */
 @Mapper
 public interface UserMapper {
-    @Select("select id,name,create_time as 'createTime' from user")
+    @Select("select id,name,create_time as 'createTime' from user t order by t.create_time desc")
 //    @Results({@Result(property = "createTime",column = "create_time")})
     List<User> findAll();
 }

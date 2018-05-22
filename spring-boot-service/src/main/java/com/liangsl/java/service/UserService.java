@@ -38,7 +38,7 @@ public class UserService {
 
     public Page<User> findList(User user, Pageable pageable){
         ExampleMatcher matcher = ExampleMatcher.matching()
-                .withMatcher("name",match -> match.contains());
+                .withMatcher("name", ExampleMatcher.GenericPropertyMatcher::contains);
         Example<User> example = Example.of(user,matcher);
         pageable.getSort().and(Sort.by(Sort.Order.desc("createTime")));
         return userRepository.findAll(example,pageable);
