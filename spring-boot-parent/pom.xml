@@ -16,10 +16,11 @@
 
     <modules>
         <module>../spring-boot-simple</module>
+        <module>../spring-boot-batch</module>
         <module>../spring-boot-service</module>
         <module>../spring-boot-repository</module>
-        <!--<module>../spring-boot-batch</module>-->
         <module>../spring-boot-entity</module>
+        <module>../spring-boot-repo-mybatis</module>
     </modules>
 
     <properties>
@@ -38,6 +39,11 @@
             <dependency>
                 <groupId>com.liangsl.java</groupId>
                 <artifactId>spring-boot-repository</artifactId>
+                <version>0.0.1.RELEASE</version>
+            </dependency>
+            <dependency>
+                <groupId>com.liangsl.java</groupId>
+                <artifactId>spring-boot-repo-mybatis</artifactId>
                 <version>0.0.1.RELEASE</version>
             </dependency>
             <dependency>

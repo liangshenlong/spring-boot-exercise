@@ -20,6 +20,18 @@
             <groupId>com.liangsl.java</groupId>
             <artifactId>spring-boot-service</artifactId>
         </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
+            <scope>provided</scope>
+            <!--provided 仅仅提供依赖，不启用redis-->
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.session</groupId>
+            <artifactId>spring-session-data-redis</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -28,14 +40,6 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-data-redis</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.session</groupId>
-            <artifactId>spring-session-data-redis</artifactId>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
