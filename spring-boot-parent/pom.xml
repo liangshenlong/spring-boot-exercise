@@ -15,7 +15,7 @@
     </parent>
 
     <modules>
-        <module>../spring-boot-simple</module>
+        <module>../spring-boot-web</module>
         <module>../spring-boot-batch</module>
         <module>../spring-boot-service</module>
         <module>../spring-boot-repository</module>
